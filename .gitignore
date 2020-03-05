@@ -179,4 +179,4 @@ $RECYCLE.BIN/
 
 /binaries
 /doc
-/lib
+#/lib
