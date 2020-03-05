@@ -72,7 +72,7 @@ if (yargs.argv.version) {
   const albumList: Array<GPhotosAlbum> = [];
   for (const albumName of yargs.argv.album) {
     albumList.push(
-      (await gphotos.searchAlbum({ title: albumName })) || (await gphotos.createAlbum({ title: albumName })),
+      (await gphotos.searchAlbum({ title: albumName })) || (await gphotos.createAlbum({ title: albumName, shared: false })),
     );
   }
   for (const albumId of yargs.argv['album-id']) {
