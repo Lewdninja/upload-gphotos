@@ -93,7 +93,7 @@ class GPhotos {
     return null;
   }
 
-  async createAlbum({ title }: { title: string }): Promise<GPhotosAlbum> {
+  async createAlbum({ title, shared }: { title: string, shared: boolean }): Promise<GPhotosAlbum> {
     try {
       const {
         OXvT9d: [[albumId]],
