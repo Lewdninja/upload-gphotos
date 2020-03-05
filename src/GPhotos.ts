@@ -112,7 +112,7 @@ class GPhotos {
           type: 'album',
           period: { from: new Date(0), to: new Date(0) },
           itemsCount: 0,
-          isShared: false,
+          isShared: shared,
         },
         { requestor: this.requestor },
       );
